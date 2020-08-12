@@ -39,7 +39,8 @@ std::string simulate(std::string const& network_input,
 std::vector<train_variant> running_time_calculation(
     std::string const& train_spec) {
   return utl::to_vec(parse_train_data(train_spec), [](auto&& i) {
-    return train_variant{.name_ = i.name_, .csv_ = compute_running_time(i)};
+    return train_variant{.name_ = i.name_,
+                         .csv_ = compute_train_run(i, i.max_speed_)};
   });
 }
 

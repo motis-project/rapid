@@ -66,3 +66,6 @@ endif()
 file(GLOB_RECURSE soro-test-files test/*.cc)
 add_executable(soro-test ${soro-test-files})
 target_link_libraries(soro-test doctest soro-lib)
+
+add_executable(soro-acceleration-benchmark benchmark/acceleration.cc)
+target_link_libraries(soro-acceleration-benchmark soro-lib benchmark)

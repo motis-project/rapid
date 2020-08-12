@@ -18,3 +18,7 @@
   url=git@github.com:motis-project/pugixml.git
   branch=master
   commit=60175e80e2f5e97e027ac78f7e14c5acc009ce50
+[benchmark]
+  url=git@github.com:motis-project/benchmark.git
+  branch=master
+  commit=94dc64692fa7e1feb361f5b6b3277fc982953afd
